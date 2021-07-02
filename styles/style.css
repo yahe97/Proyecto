@@ -261,7 +261,7 @@ html{
 .input-menu:checked ~ .desktop-menu {
     transform: translateX(-86%); 
     transition: all 0.5s ease-in-out;
-    left: calc(-7vw);
+    left: calc(-7.8vw);
 }
 .input-menu:checked ~ label > .inner {
     transform: translateY(0px) rotate(45deg);
@@ -313,6 +313,9 @@ html{
     transition: all 0.5s ease-in-out;
 }
 
+.desktop-menu li:hover{
+    text-decoration: line-through;
+}
 .desktop-menu,
 .desktop-menu ul,
 .desktop-menu li,
@@ -322,6 +325,7 @@ html{
 
 .desktop-menu ul{
     display: block;
+    position: fixed;
 }
 .desktop-menu li {
     list-style: none;
@@ -417,6 +421,7 @@ html{
 
     .desktop-menu ul {
         display: flex;
+        position: relative;
         justify-content: flex-end;
     }
 
